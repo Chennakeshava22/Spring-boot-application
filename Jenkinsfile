@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('clone repository') {
             steps{
-                git branch: main, url: https://github.com/Chennakeshava22/Spring-boot-application.git 
+                git branch: 'main', url: 'https://github.com/Chennakeshava22/Spring-boot-application.git' 
 
             }
         }
