@@ -8,13 +8,13 @@ pipeline{
             }
         }
         stage('mvn test'){
-            step{
+            steps{
                 sh 'mvn test'
 
             }
         }
         stage('build'){
-            step{
+            steps{
                 sh 'mvn install -DskipTests'
             }
         }
